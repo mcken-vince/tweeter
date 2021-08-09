@@ -8,14 +8,13 @@
   flex-direction: column;
 }
 
-
 .btn-tweet {
   background-color: #4056A1;
   color: #f4f1ec;
   padding: .1em .5em .1em .5em;
 }
 
-.tweet-below {
+.tweet-form-footer {
   margin-top: 10px;
   border-top: 3px solid gray;
   padding-top: 10px;
