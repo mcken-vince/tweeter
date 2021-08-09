@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+.new-tweet p {
+  margin: 0px;
+}
+
 .fa-angle-double-down {
   color: red;
 }
