@@ -19,12 +19,11 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
 
 }
 
-#logo {
-  font-family: 'Bungee', sans-serif;
-}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
