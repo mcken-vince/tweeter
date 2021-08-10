@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
   z-index: 2;
 }
 
@@ -18,16 +19,19 @@
   align-items: flex-start;
 }
 
-.new-tweet {
+.navigation p {
+  margin: 0px;
+}
+
+.nav-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0px;
+  padding-bottom: 0px;
 }
 
-.new-tweet p {
-  margin: 0px;
-}
 
 .fa-angle-double-down {
   color: red;
