@@ -9,6 +9,8 @@
   justify-content: space-between;
   align-items: baseline;
   z-index: 2;
+  position: fixed;
+  top: auto;
 }
 
 .navigation span {
