@@ -14,6 +14,12 @@
   padding: .1em .5em .1em .5em;
 }
 
+#submit-tweet:hover {
+  box-shadow: 5px 5px 5px lightsteelblue;
+  font-size: 105%;
+  padding: .07em .5em .07em .5em;
+}
+
 .tweet-form-footer {
   margin-top: 10px;
   border-top: 3px solid gray;
