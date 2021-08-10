@@ -31,6 +31,7 @@
   border: none;
   font-size: .8em;
   resize: none;
+  height: 1.5em;
 }
 
 #counter.negative {
