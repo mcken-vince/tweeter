@@ -1,4 +1,6 @@
 article.tweet {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: fit-content;
   border: 3px solid gray;
@@ -14,18 +16,21 @@ article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   height: 2.5em;
   background-image: none;
   background-color: #f4f1ec;
+  font-size: .8em;
 }
 
 article.tweet header a {
-  color: lightsteelblue
+  color: lightsteelblue;
 }
 
-article.tweet body {
-  flex-wrap: wrap;
-  font-size: large;
+article.tweet content > p{
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 article.tweet footer {
