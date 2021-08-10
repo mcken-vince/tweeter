@@ -1,11 +1,10 @@
 .new-tweet {
   width: 100%;
-  align-items: stretch;
 }
 
-.new-tweet-form {
-  display: flex;
-  flex-direction: column;
+.new-tweet h3 {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 #submit-tweet {
@@ -20,7 +19,7 @@
   padding: .07em .5em .07em .5em;
 }
 
-.tweet-form-footer {
+.new-tweet footer {
   margin-top: 10px;
   border-top: 3px solid gray;
   padding-top: 10px;
@@ -38,8 +37,9 @@
   font-size: .8em;
   resize: none;
   height: 1.5em;
+  width: 100%;
 }
 
-#counter.negative {
+.counter.negative {
   color: red;
 }

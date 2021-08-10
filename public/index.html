@@ -49,20 +49,17 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <h3>Compose Tweet</h3>
         <form method="POST" action="/tweets/">
-          <div class="new-tweet-form">
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-            <div class="tweet-form-footer">
+            <footer>
               <button id="submit-tweet" type="submit">Tweet</button>
-              <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
-            </div>
-          </div>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </footer>
         </form>
       </section>
-      <div id="tweets-container">
-        
-      </div>
+
+      <div id="tweets-container"></div>
     </main>
 
     <!-- App JS -->
