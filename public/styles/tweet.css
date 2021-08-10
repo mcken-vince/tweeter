@@ -38,7 +38,7 @@ article.tweet header img {
   height: 1.5em;
 }
 
-article.tweet content > p {
+.content > p {
   font-size: .8em;
   margin-top: 0em;
   margin-bottom: 0em;

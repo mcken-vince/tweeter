@@ -35,9 +35,9 @@ $(document).ready(function() {
           </div>
           <a>${tweetData.user.handle}</a>
         </header>
-        <content>
+        <div class="content">
           <p><b>${tweetData.content.text}</b></p>
-        </content>
+        </div>
         <footer>
           <p>${timeago.format(tweetData.created_at)}</p>
           <div class="icons">
@@ -51,13 +51,18 @@ $(document).ready(function() {
     return $newTweet;
   };
 
-  const renderTweets = function(data) {
+  const renderTweets = function(users) {
     const $tweetsContainer = $('#tweets-container');
-    for (const user of data) {
+    for (const user of users) {
       $tweetsContainer.append(createTweetElement(user));
     }
   };
 
   renderTweets(data);
-  
+
+  $('#submit-form').submit(function(event) {
+    event.preventDefault();
+    console.log(event);
+  });
+
 });
