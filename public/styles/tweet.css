@@ -27,7 +27,18 @@ article.tweet header a {
   color: lightsteelblue;
 }
 
-article.tweet content > p{
+article.tweet .left-hand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+article.tweet header img {
+  padding-right: .5em;
+  height: 1.5em;
+}
+
+article.tweet content > p {
   font-size: .8em;
   margin-top: 0em;
   margin-bottom: 0em;
