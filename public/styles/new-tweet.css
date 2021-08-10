@@ -23,6 +23,7 @@
   justify-content: space-between;
   width: 100%;
   font-family: 'Bungee', sans-serif;
+  font-size: .8em;
 }
 
 #tweet-text {
