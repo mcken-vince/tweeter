@@ -23,7 +23,7 @@ article.tweet header a {
   color: lightsteelblue
 }
 
-article.tweet content {
+article.tweet body {
   flex-wrap: wrap;
   font-size: large;
 }
