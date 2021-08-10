@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.btn-tweet {
+#submit-tweet {
   background-color: #4056A1;
   color: #f4f1ec;
   padding: .1em .5em .1em .5em;
