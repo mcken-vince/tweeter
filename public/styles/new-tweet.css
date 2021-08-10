@@ -31,3 +31,7 @@
   font-size: .8em;
   resize: none;
 }
+
+#counter.negative {
+  color: red;
+}
