@@ -38,8 +38,7 @@ $(document).ready(function() {
 
   // get tweets from /tweets and re-render page to display all tweets in database
   const loadTweets = function() {
-    $.ajax('/tweets', { method: 'GET' })
-    .then(function(tweetsFromServer) {
+    $.get('/tweets', (tweetsFromServer) => {
       renderTweets(tweetsFromServer);
     });
   };
