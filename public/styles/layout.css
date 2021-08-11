@@ -43,3 +43,25 @@ main.container {
 h3 {
   margin: 0px;
 }
+
+#toggle-top {
+  z-index: +1;
+  background-color: red;
+  height:2em;
+  width: 2em;
+  border-radius: 1em;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-angle-double-up{
+  color: #f4f1ec;
+  z-index: inherit;
+  position: absolute;
+  visibility: visible;
+  padding-bottom: .1em;
+}
