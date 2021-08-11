@@ -28,18 +28,27 @@ $(document).ready(function() {
 
   const renderTweets = function(users) {
     const $tweetsContainer = $('#tweets-container');
-    for (const user of users) {
-      $tweetsContainer.append(createTweetElement(user));
+    $tweetsContainer.empty();
+    for (const user in users) {
+      $tweetsContainer.append(createTweetElement(users[user]));
     }
   };
 
+  const loadTweets = function() {
+    $.ajax('/tweets', { method: 'GET' })
+      .then(function(tweetsFromServer) {
+        renderTweets(tweetsFromServer);
+      });
+  };
+
+  loadTweets();
 
   $('#submit-form').submit(function(event) {
     event.preventDefault();
     // convert form data into a query string and post it to /tweets
     const queryStringData = $('#submit-form').serialize();
-    $.post("/tweets", queryStringData, function(data) {
-      console.log("Data has been posted! ", data);
+    $.post("/tweets", queryStringData, function() {
+      loadTweets();
     });
   });
 
