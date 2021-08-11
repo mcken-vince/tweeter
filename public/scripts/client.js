@@ -54,20 +54,21 @@ $(document).ready(function() {
     const $tweetText = $(this).find('#tweet-text');
     // check edge cases
     if (!$tweetText.val()) {
-      $error.hide(100, 'swing');
-      $error.slideDown('slow').text("⚠︁  Tweet what?? You haven't written anything!  ⚠︁");
+      $error.slideUp('fast');
+      $error.slideDown('').text("⚠︁  Tweet what?? You haven't written anything!  ⚠︁");
     } else if ($tweetText.val().length > 140) {
-      $error.hide(100, 'swing');
+      $error.slideUp('fast');
       $error.slideDown('slow').text("⚠︁  Your tweet has exceeded the limit of 140 characters!  ⚠︁");
     } else {
       // if tweet passes checks, post it!
-      $error.hide(500);
+      $error.slideUp();
       const queryStringData = $('#submit-form').serialize();
       $.post("/tweets", queryStringData, function() {
         loadTweets();
       });
       // clear textbox
       $('#tweet-text').val('');
+      
     }
   });
 
@@ -76,6 +77,16 @@ $(document).ready(function() {
     if (event.keyCode === 13) {
       event.preventDefault();
       $(this).parent().submit();
+    }
+  });
+
+  // toggle new-tweet form on click
+  $('.toggle-compose').click(function() {
+    const $newTweet = $(this).parent().parent().find('.new-tweet');
+    if ($newTweet.css("display") === 'none') {
+      $newTweet.slideDown();
+    } else {    
+      $newTweet.slideUp();
     }
   });
 
