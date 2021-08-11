@@ -52,12 +52,13 @@ $(document).ready(function() {
       alert("Post what?! Text is empty.");
     } else if ($tweetText.val().length > 140) {
       alert("Your tweet is over the 140 character limit!");
+    } else {
+      // convert form data into a query string and post it to /tweets
+      const queryStringData = $('#submit-form').serialize();
+      $.post("/tweets", queryStringData, function() {
+        loadTweets();
+      });
     }
-    // convert form data into a query string and post it to /tweets
-    const queryStringData = $('#submit-form').serialize();
-    $.post("/tweets", queryStringData, function() {
-      loadTweets();
-    });
   });
 
 });
