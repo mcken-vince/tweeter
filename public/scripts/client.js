@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     const $tweetText = $(this).find('#tweet-text');
   
-    if ($tweetText.val().length < 1) {
+    if (!$tweetText.val()) {
       alert("Post what?! Text is empty.");
     } else if ($tweetText.val().length > 140) {
       alert("Your tweet is over the 140 character limit!");
