@@ -58,6 +58,7 @@ $(document).ready(function() {
       $.post("/tweets", queryStringData, function() {
         loadTweets();
       });
+      $('#tweet-text').val('');
     }
   });
 
