@@ -1,30 +1,32 @@
 $(document).ready(function() {
   
   const createTweetElement = function(tweetData) {
-    // need to correct this to prevent malicious scripts from running in tweet data
-    const $newTweet = $(`
-      <article class="tweet">
-        <header>
-          <div class="left-hand">
-            <img src=${tweetData.user.avatars} alt="profile-pic">
-            <p>${tweetData.user.name}</p>
-          </div>
-          <a>${tweetData.user.handle}</a>
-        </header>
-        <div class="content">
-          <p><b>${tweetData.content.text}</b></p>
-        </div>
-        <footer>
-          <p>${timeago.format(tweetData.created_at)}</p>
-          <div class="icons">
-            <i class="fas fa-solid fa-flag hover-icon"></i>
-            <i class="fas fa-solid fa-retweet hover-icon"></i>
-            <i class="fas fa-solid fa-heart hover-icon"></i>
-          </div>
-        </footer>
-      </article>`);
-      
-    return $newTweet;
+    // using .text() to prevent XSS (cross site scripting)
+    // create header & all child elements
+    const $leftDiv = $('<div class="left-hand"></div>');
+    const $avatar = $('<img>').attr('src', tweetData.user.avatars);
+    const $name = $('<p>').text(tweetData.user.name);
+    const $handle = $('<a>').text(tweetData.user.handle);
+    $leftDiv.append($avatar, $name);
+    const $header = $('<header>').append($leftDiv, $handle);
+    // create content with text inside
+    const $content = $('<div class="content">')
+    const $tweetText = $('<p></p>').text(tweetData.content.text);
+    $content.append($tweetText);
+    // create footer & all child elements
+    const $footer = $('<footer>');
+    const $time = $('<p>').text(timeago.format(tweetData.created_at));
+    const $icons = $('<div class="icons">');
+    const $flagIcon = $('<i class="fas fa-solid fa-flag hover-icon"></i>');
+    const $retweetIcon = $('<i class="fas fa-solid fa-retweet hover-icon"></i>');
+    const $heartIcon = $('<i class="fas fa-solid fa-heart hover-icon"></i>');
+    $icons.append($flagIcon, $retweetIcon, $heartIcon);
+    $footer.append($time, $icons);
+    // final product $article, append children
+    const $tweetArticle = $('<article class="tweet"></article>');
+    $tweetElement.append($header, $content, $footer);
+
+    return $tweetElement;
   };
 
   const renderTweets = function(users) {
@@ -67,6 +69,7 @@ $(document).ready(function() {
 
   $('#tweet-text').keypress(function(event) {
     if (event.keyCode === 13) {
+      event.preventDefault();
       $(this).parent().submit();
     }
   });
