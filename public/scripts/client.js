@@ -65,4 +65,10 @@ $(document).ready(function() {
     }
   });
 
+  $('#tweet-text').keypress(function(event) {
+    if (event.keyCode === 13) {
+      $(this).parent().submit();
+    }
+  });
+
 });
