@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
   });
 
-  $('window').scroll(function() {
+  $('window').on('scroll', function() {
     alert('You scrollled!!!!');
   });
 
