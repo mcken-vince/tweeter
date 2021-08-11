@@ -1,6 +1,7 @@
 $(document).ready(function() {
   
   const createTweetElement = function(tweetData) {
+    // need to correct this to prevent malicious scripts from running in tweet data
     const $newTweet = $(`
       <article class="tweet">
         <header>
