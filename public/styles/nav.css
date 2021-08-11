@@ -25,6 +25,10 @@
   margin: 0px;
 }
 
+.toggle-compose:hover {
+  cursor: pointer;
+}
+
 .toggle-compose {
   display: flex;
   flex-direction: column;
