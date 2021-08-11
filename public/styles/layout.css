@@ -39,3 +39,7 @@ main.container {
 #tweets-container {
   width: 100%;
 }
+
+h3 {
+  margin: 0px;
+}
