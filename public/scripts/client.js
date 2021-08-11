@@ -68,7 +68,6 @@ $(document).ready(function() {
       });
       // clear textbox
       $('#tweet-text').val('');
-      
     }
   });
 
@@ -90,6 +89,7 @@ $(document).ready(function() {
     }
   });
 
+  // scroll to top
   $('#toggle-top').click(function() {
     $("html, body").animate({ scrollTop: 0 }, "fast");
     return false;

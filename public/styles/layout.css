@@ -53,9 +53,7 @@ h3 {
   position: fixed;
   bottom: 5px;
   right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .fa-angle-double-up{
@@ -63,5 +61,6 @@ h3 {
   z-index: inherit;
   position: absolute;
   visibility: visible;
-  padding-bottom: .1em;
+  padding-top: .45em;
+  padding-left: .65em;
 }

@@ -11,8 +11,14 @@ $(document).ready(function() {
     }
   });
 
-  $('window').on('scroll', function() {
-    alert('You scrollled!!!!');
+  const $toggleTop = $('#toggle-top');
+  $(window).scroll(function() {
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 500) {
+      $toggleTop.show('swing');
+    } else {
+      $toggleTop.hide('fast');
+    }
   });
 
 });
