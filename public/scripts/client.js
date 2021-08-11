@@ -45,28 +45,33 @@ $(document).ready(function() {
     });
   };
 
+  // load tweets on page load
   loadTweets();
 
   $('#submit-form').submit(function(event) {
     event.preventDefault();
-
+    const $error = $(this).parent().find('#error');
     const $tweetText = $(this).find('#tweet-text');
     // check edge cases
     if (!$tweetText.val()) {
-      alert("Post what?! Text is empty.");
+      $error.hide(100, 'swing');
+      $error.slideDown('slow').text("⚠︁  Tweet what?? You haven't written anything!  ⚠︁");
     } else if ($tweetText.val().length > 140) {
-      alert("Your tweet is over the 140 character limit!");
+      $error.hide(100, 'swing');
+      $error.slideDown('slow').text("⚠︁  Your tweet has exceeded the limit of 140 characters!  ⚠︁");
     } else {
       // if tweet passes checks, post it!
+      $error.hide(500);
       const queryStringData = $('#submit-form').serialize();
       $.post("/tweets", queryStringData, function() {
         loadTweets();
       });
-      // clear textarea
+      // clear textbox
       $('#tweet-text').val('');
     }
   });
 
+  // submit tweet when enter key is pressed
   $('#tweet-text').keypress(function(event) {
     if (event.keyCode === 13) {
       event.preventDefault();
