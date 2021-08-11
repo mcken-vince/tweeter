@@ -11,4 +11,8 @@ $(document).ready(function() {
     }
   });
 
+  $('window').scroll(function() {
+    alert('You scrollled!!!!');
+  });
+
 });
