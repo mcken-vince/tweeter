@@ -43,6 +43,7 @@ article.tweet header img {
   margin-top: 0em;
   margin-bottom: 0em;
   word-wrap: break-word;
+  font-weight: bold;
 }
 
 article.tweet footer {

@@ -23,7 +23,7 @@ $(document).ready(function() {
     $icons.append($flagIcon, $retweetIcon, $heartIcon);
     $footer.append($time, $icons);
     // final product $article, append children
-    const $tweetArticle = $('<article class="tweet"></article>');
+    const $tweetElement = $('<article class="tweet"></article>');
     $tweetElement.append($header, $content, $footer);
 
     return $tweetElement;
