@@ -42,6 +42,7 @@ article.tweet header img {
   font-size: .8em;
   margin-top: 0em;
   margin-bottom: 0em;
+  word-wrap: break-word;
 }
 
 article.tweet footer {
