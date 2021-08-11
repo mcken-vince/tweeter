@@ -85,6 +85,7 @@ $(document).ready(function() {
     const $newTweet = $(this).parent().parent().find('.new-tweet');
     if ($newTweet.css("display") === 'none') {
       $newTweet.slideDown();
+      $('#tweet-text').focus();
     } else {    
       $newTweet.slideUp();
     }
