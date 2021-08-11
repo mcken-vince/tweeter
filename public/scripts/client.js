@@ -45,6 +45,14 @@ $(document).ready(function() {
 
   $('#submit-form').submit(function(event) {
     event.preventDefault();
+
+    const $tweetText = $(this).find('#tweet-text');
+  
+    if ($tweetText.val().length < 1) {
+      alert("Post what?! Text is empty.");
+    } else if ($tweetText.val().length > 140) {
+      alert("Your tweet is over the 140 character limit!");
+    }
     // convert form data into a query string and post it to /tweets
     const queryStringData = $('#submit-form').serialize();
     $.post("/tweets", queryStringData, function() {
