@@ -58,6 +58,7 @@ article.tweet footer {
 
 .hover-icon {
   transition: color .1s linear;
+  padding-left: .2em;
 }
 
 .hover-icon:hover {
