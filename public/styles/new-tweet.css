@@ -1,5 +1,6 @@
 .new-tweet {
   width: 100%;
+  margin-top: .75em;
 }
 
 .new-tweet h3 {
@@ -42,4 +43,19 @@
 
 .counter.negative {
   color: red;
+}
+
+#error {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 3px solid red;
+  margin: 10px 0px;
+  display: none;
+  width:fit-content;
+}
+
+#error > h3 {
+  margin: .1em;
 }
