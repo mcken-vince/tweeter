@@ -29,16 +29,18 @@ $(document).ready(function() {
   const renderTweets = function(users) {
     const $tweetsContainer = $('#tweets-container');
     $tweetsContainer.empty();
-    for (const user in users) {
+    // iterate through array backwards, from newest to oldest
+    for (let user = users.length - 1; user >= 0; user--) {
       $tweetsContainer.append(createTweetElement(users[user]));
     }
   };
 
+  // get tweets from /tweets and re-render page to display all tweets in database
   const loadTweets = function() {
     $.ajax('/tweets', { method: 'GET' })
-      .then(function(tweetsFromServer) {
-        renderTweets(tweetsFromServer);
-      });
+    .then(function(tweetsFromServer) {
+      renderTweets(tweetsFromServer);
+    });
   };
 
   loadTweets();
@@ -47,17 +49,18 @@ $(document).ready(function() {
     event.preventDefault();
 
     const $tweetText = $(this).find('#tweet-text');
-  
+    // check edge cases
     if (!$tweetText.val()) {
       alert("Post what?! Text is empty.");
     } else if ($tweetText.val().length > 140) {
       alert("Your tweet is over the 140 character limit!");
     } else {
-      // convert form data into a query string and post it to /tweets
+      // if tweet passes checks, post it!
       const queryStringData = $('#submit-form').serialize();
       $.post("/tweets", queryStringData, function() {
         loadTweets();
       });
+      // clear textarea
       $('#tweet-text').val('');
     }
   });
