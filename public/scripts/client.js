@@ -10,7 +10,7 @@ $(document).ready(function() {
     $leftDiv.append($avatar, $name);
     const $header = $('<header>').append($leftDiv, $handle);
     // create content with text inside
-    const $content = $('<div class="content">')
+    const $content = $('<div class="content">');
     const $tweetText = $('<p></p>').text(tweetData.content.text);
     $content.append($tweetText);
     // create footer & all child elements
