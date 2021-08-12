@@ -30,17 +30,13 @@ Mobile devices
     font-size: 4rem;
   }
 
-  article.tweet footer {
+  article.tweet footer, .navigation > .toggle-compose {
     font-size: 3rem;
   }
 
   article.tweet > footer > .icons > .fa-retweet {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .navigation > .toggle-compose {
-    font-size: 3rem;
   }
 }
 
