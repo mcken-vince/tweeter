@@ -33,6 +33,15 @@
   cursor: pointer;
 }
 
+@keyframes bounce{
+  from{transform: translateY(0)}
+  to{transform: translateY(-5px)}
+  from{transform: translateY(-5px)}
+  to{transform: translateY(5px)}
+  from{transform: translateY(5px)}
+  to{transform: translateY(0px)}
+}
+
 .toggle-compose {
   display: flex;
   flex-direction: column;
@@ -44,7 +53,12 @@
 
 .fa-angle-double-down {
   color: red;
-}
+  animation-name: bounce;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 5s;
+
 
 @media (max-width:450px) {
   .navigation {
