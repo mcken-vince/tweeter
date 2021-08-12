@@ -44,6 +44,10 @@ h2, h3 {
   margin: 0px;
 }
 
+#toggle-top:hover {
+  cursor: pointer;
+}
+
 #toggle-top {
   z-index: +1;
   background-color: red;
