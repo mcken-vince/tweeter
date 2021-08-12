@@ -39,9 +39,23 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
-  padding-bottom: 0px;
+  padding: 1em, 0em;
 }
 
 .fa-angle-double-down {
   color: red;
+}
+
+@media (max-width:450px) {
+  .navigation {
+    height: 6em;
+  }
+  
+  .navigation p {
+    font-size: .75em;
+  }
+
+  .navigation > span {
+    text-size-adjust: .5em;
+  }
 }
