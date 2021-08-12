@@ -8,7 +8,7 @@
     "content": {
       "text": "Je pense, donc je suis."
     },
-    "created_at": 1628289320192
+    "created_at": 1628289607106
   },
   {
     "user": {
@@ -19,7 +19,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants."
     },
-    "created_at": 1628375720192
+    "created_at": 1628376007106
   },
   {
     "user": {
@@ -30,7 +30,7 @@
     "content": {
       "text": "Life is either a daring adventure or nothing at all."
     },
-    "created_at": 1628462120192
+    "created_at": 1628462407106
   },
   {
     "user": {
@@ -41,7 +41,7 @@
     "content": {
       "text": "Don't judge each day by the harvest you reap but by the seeds that you plant."
     },
-    "created_at": 1628548520192
+    "created_at": 1628548807106
   },
   {
     "user": {
@@ -52,7 +52,7 @@
     "content": {
       "text": "Tell me and I forget. Teach me and I remember. Involve me and I learn."
     },
-    "created_at": 1628634920192
+    "created_at": 1628635207106
   },
   {
     "user": {
@@ -63,6 +63,6 @@
     "content": {
       "text": "Only a life lived for others is a life worthwhile."
     },
-    "created_at": 1628721320192
+    "created_at": 1628721607106
   }
 ]
