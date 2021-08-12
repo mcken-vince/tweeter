@@ -9,8 +9,7 @@ article.tweet {
 }
 
 article.tweet:hover {
-  box-shadow:5px 5px 7px lightsteelblue
-  cursor: pointer;
+  box-shadow:5px 5px 7px lightsteelblue;
 }
 
 article.tweet header {
