@@ -58,7 +58,7 @@
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-delay: 5s;
-
+}
 
 @media (max-width:450px) {
   .navigation {
