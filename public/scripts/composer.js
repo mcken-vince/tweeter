@@ -11,10 +11,13 @@ $(document).ready(function() {
     }
   });
 
-  // show toggle button when scrolling below header
-  // also toggle background on nav bar
+  // used in scroll event listener below
+  // defined outside for minimal DOM crawling
   const $toggleTop = $('#toggle-top');
   const $navigation = $('.navigation');
+  
+  // show toggle button when scrolling below header
+  // also toggle background on nav bar
   $(window).scroll(function() {
     console.log($(window).scrollTop());
     if ($(window).scrollTop() > 210) {

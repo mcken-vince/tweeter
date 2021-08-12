@@ -45,7 +45,7 @@ $(document).ready(function() {
     });
   };
 
-  // load tweets on page load
+  // load tweets automatically on page load
   loadTweets();
 
   $('#submit-form').submit(function(event) {
@@ -80,7 +80,7 @@ $(document).ready(function() {
     }
   });
 
-  // toggle new-tweet form on click
+  // toggle new-tweet form
   $('.toggle-compose').click(function() {
     const $newTweet = $(this).parent().parent().find('.new-tweet');
     if ($newTweet.css("display") === 'none') {
