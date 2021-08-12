@@ -4,7 +4,7 @@ Mobile devices
 @media only screen and (max-device-width: 767px) {
   nav.navigation {
     height: 15rem;
-    background-color: #4784d4;
+    background-color: #4056A1;
     background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
     align-items: center;
   }
@@ -65,7 +65,7 @@ Desktop or anything over 1024px
   }
 
   .navigation {
-    background-color: #4784d4;
+    background-color: #4056A1;
     background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
   }
 }
