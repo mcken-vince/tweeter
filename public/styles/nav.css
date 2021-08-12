@@ -68,20 +68,5 @@
   animation-name: bounce;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate-reverse; */
   animation-delay: 2s;
-}
-
-@media (max-width:450px) {
-  .navigation {
-    height: 6em;
-  }
-  
-  .navigation p {
-    font-size: .75em;
-  }
-
-  .navigation > span {
-    text-size-adjust: .5em;
-  }
 }

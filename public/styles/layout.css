@@ -68,30 +68,3 @@ h2, h3 {
   padding-top: .45em;
   padding-left: .66em;
 }
-
-@media (min-width:1024px) {
-  body {
-    flex-direction: row;
-    width: 100%;
-  }
-  
-  main.container {
-    max-width: 70%;
-  }
-
-  main.container, body > header{
-    margin-top: 160px;
-    padding: 20px 60px;
-  }
-
-  body > header {
-    max-width: 30%;
-    margin-left: 60px;
-    margin-top: 200px;
-  }
-
-  .navigation {
-    background-color: #4784d4;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
-  }
-}
