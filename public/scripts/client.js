@@ -84,6 +84,7 @@ $(document).ready(function() {
   $('.toggle-compose').click(function() {
     const $newTweet = $(this).parent().parent().find('.new-tweet');
     if ($newTweet.css("display") === 'none') {
+      $(this).parent().parent().find('#error').hide();
       $newTweet.slideDown();
       $('#tweet-text').focus();
     } else {    
