@@ -11,6 +11,11 @@ User can compose tweets, which show up as posted by a random user. Reaction icon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## GIFs
+
+!["Tweeter demo"](https://github.com/mcken-vince/tweeter/blob/master/docs/tweeter-demo.gif)
+!["Tweeter screen-size response"](https://github.com/mcken-vince/tweeter/blob/master/docs/tweeter-responsive-demo.gif)
+
 ## Dependencies
 
 - Node 5.10.x or above
