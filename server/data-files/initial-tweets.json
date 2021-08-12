@@ -1,24 +1,68 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1628632109182
-  },
-  {
-    "user": {
       "name": "Descartes",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
       "handle": "@rd"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Je pense, donc je suis."
     },
-    "created_at": 1628718509182
+    "created_at": 1628289320192
+  },
+  {
+    "user": {
+      "name": "Newton",
+      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@SirIsaac"
+    },
+    "content": {
+      "text": "If I have seen further it is by standing on the shoulders of giants."
+    },
+    "created_at": 1628375720192
+  },
+  {
+    "user": {
+      "name": "Helen",
+      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "handle": "@KellerH"
+    },
+    "content": {
+      "text": "Life is either a daring adventure or nothing at all."
+    },
+    "created_at": 1628462120192
+  },
+  {
+    "user": {
+      "name": "Robert",
+      "avatars": "https://i.imgur.com/ilT4JDe.png",
+      "handle": "@RLStevenson"
+    },
+    "content": {
+      "text": "Don't judge each day by the harvest you reap but by the seeds that you plant."
+    },
+    "created_at": 1628548520192
+  },
+  {
+    "user": {
+      "name": "Benjamin",
+      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@BennyFranklin"
+    },
+    "content": {
+      "text": "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+    },
+    "created_at": 1628634920192
+  },
+  {
+    "user": {
+      "name": "Einstein",
+      "avatars": "https://i.imgur.com/2WZtOD6.png",
+      "handle": "@AlbEinie"
+    },
+    "content": {
+      "text": "Only a life lived for others is a life worthwhile."
+    },
+    "created_at": 1628721320192
   }
 ]
