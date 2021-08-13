@@ -1,6 +1,7 @@
 $icon-hover-color: darkgoldenrod;
 $tweet-hover-color: lightsteelblue;
 $border-color: gray;
+$tweet-bg-color: #f4f1ec;
 
 article.tweet {
   display: flex;
@@ -10,6 +11,7 @@ article.tweet {
   border: 3px solid $border-color;
   margin: 1em 0em 1em 0em;
   padding: 0em .5em 0em .5em;
+  background-color: $tweet-bg-color;
   
   &:hover {
     box-shadow:7px 7px 9px $tweet-hover-color;
@@ -23,7 +25,7 @@ article.tweet {
     align-items: center;
     height: 2.5em;
     background-image: none;
-    background-color: #f4f1ec;
+    background-color: transparent;
     font-size: .8em;
     
     .left-hand {
