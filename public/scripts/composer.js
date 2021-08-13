@@ -19,7 +19,7 @@ $(document).ready(function() {
   // show toggle button when scrolling below header
   // also toggle background on nav bar
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 210) {
+    if ($(window).scrollTop() > 220) {
       $toggleTop.show('swing');
       $navigation.addClass('background-on');
     } else {
