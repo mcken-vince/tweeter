@@ -1,5 +1,7 @@
 $nav-color: #4056A1;
 $nav-bg-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+$desktop-header-color: #4784d4;
+$desktop-header-image: url("https://www.transparenttextures.com/patterns/dust.png");
 
 /*
 Mobile devices
@@ -66,8 +68,8 @@ Desktop or anything over 1024px
       max-width: 30%;
       margin-left: 60px;
       margin-top: 200px;
-      background-image: url("https://www.transparenttextures.com/patterns/dust.png");
-      background-color: #4784d4;
+      background-image: $desktop-header-image;
+      background-color: $desktop-header-color;
     }
   }
 
