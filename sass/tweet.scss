@@ -1,0 +1,74 @@
+$icon-hover-color: darkgoldenrod;
+$tweet-hover-color: lightsteelblue;
+$border-color: gray;
+
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  border: 3px solid $border-color;
+  margin: 1em 0em 1em 0em;
+  padding: 0em .5em 0em .5em;
+  
+  &:hover {
+    box-shadow:7px 7px 9px $tweet-hover-color;
+  }
+  
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    background-image: none;
+    background-color: #f4f1ec;
+    font-size: .8em;
+    
+    .left-hand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    a {
+      color: $tweet-hover-color;
+    }
+    
+    img {
+      padding-right: .5em;
+      height: 1.5em;
+    }
+    
+  }
+  
+  footer {
+    margin-top: 1em;
+    border-top: 3px solid $border-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+  }
+}
+
+.content > p {
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+
+.hover-icon {
+  transition: color .1s linear;
+  padding-left: .2em;
+  cursor: pointer;
+  
+  &:hover {
+    color:$icon-hover-color;
+  }
+}

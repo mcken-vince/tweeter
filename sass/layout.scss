@@ -3,10 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+$background-color: #f4f1ec;
+$standard-font: 'Source Sans Pro', sans-serif;
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,11 +17,12 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: $background-color;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $standard-font;
   display: flex;
   flex-direction: column;
 }
@@ -29,11 +33,13 @@ main {
   width: 90%;
   justify-self: center;
   align-items: center;
-  background-color: #f4f1ec;
+  background-color: $background-color;
+  
+  &.container {
+    align-self: center;
+  }
 }
-main.container {
-  align-self: center;
-}
+
 
 #tweets-container {
   width: 100%;
@@ -42,3 +48,4 @@ main.container {
 h2, h3 {
   margin: 0px;
 }
+

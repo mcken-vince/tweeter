@@ -1,25 +1,11 @@
 .new-tweet {
   width: 100%;
-  margin-top: .75em;
+  margin-top: 0.75em;
 }
-
 .new-tweet h3 {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
-
-#submit-tweet {
-  background-color: #4056A1;
-  color: #f4f1ec;
-  padding: .1em .5em;
-}
-
-#submit-tweet:hover {
-  box-shadow: 5px 5px 5px lightsteelblue;
-  font-size: 102%;
-  cursor: pointer;
-}
-
 .new-tweet footer {
   margin-top: 10px;
   border-top: 3px solid gray;
@@ -28,14 +14,25 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  font-family: 'Bungee', sans-serif;
-  font-size: .8em;
+  font-family: "Bungee", sans-serif;
+  font-size: 0.8em;
+}
+
+#submit-tweet {
+  background-color: #4056A1;
+  color: #f4f1ec;
+  padding: 0.1em 0.5em;
+}
+#submit-tweet:hover {
+  box-shadow: 5px 5px 5px lightsteelblue;
+  font-size: 102%;
+  cursor: pointer;
 }
 
 #tweet-text {
   background-color: transparent;
   border: none;
-  font-size: .8em;
+  font-size: 0.8em;
   resize: none;
   height: 1.5em;
   width: 100%;
@@ -53,9 +50,8 @@
   border: 3px solid red;
   margin: 10px 0px;
   display: none;
-  width:fit-content;
+  width: fit-content;
 }
-
 #error > h3 {
-  margin: .1em;
+  margin: 0.1em;
 }

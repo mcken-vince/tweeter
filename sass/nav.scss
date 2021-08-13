@@ -1,7 +1,11 @@
+$title-font: 'Bungee', sans-serif;
+$nav-arrows-color: red;
+$accent-color: #FFFFFF;
+
 .navigation {
   height: 120px;
   width: 100%;
-  color: #FFFFFF;
+  color: $accent-color;
   padding: 1.5em;
   display: flex;
   flex-direction: row;
@@ -10,27 +14,30 @@
   z-index: 2;
   position: fixed;
   top: auto;
-}
-.navigation.background-on {
-  background-color: #4056A1;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
-}
-.navigation span {
-  font-family: "Bungee", sans-serif;
-  font-size: 1.5em;
-  display: flex;
-  align-content: flex-start;
-  align-items: flex-start;
-}
-.navigation p {
-  margin: 0px;
+
+  &.background-on {
+    background-color: #4056A1;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+  }
+
+  span {
+    font-family: $title-font;
+    font-size: 1.5em;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  p {
+    margin: 0px;
+  }
 }
 
-@keyframes bounce {
+@keyframes bounce{
   75% {
     transform: translateY(0px);
   }
-  80% {
+  80%{
     transform: translateY(-4px);
   }
   85% {
@@ -44,8 +51,9 @@
   }
   100% {
     transform: translateY(0px);
-  }
+  } 
 }
+
 .toggle-compose {
   display: flex;
   flex-direction: column;
@@ -53,28 +61,31 @@
   justify-content: center;
   margin: 0px;
   padding: 1em, 0em;
-}
-.toggle-compose:hover {
-  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
+
 #toggle-top {
-  z-index: 1;
-  background-color: red;
-  height: 2em;
+  z-index: +1;
+  background-color: $nav-arrows-color;
+  height:2em;
   width: 2em;
   border-radius: 1em;
   position: fixed;
   bottom: 5px;
   right: 5px;
   display: none;
-}
-#toggle-top:hover {
-  cursor: pointer;
+  
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .fa-angle-double-down {
-  color: red;
+  color: $nav-arrows-color;
   animation-name: bounce;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -82,10 +93,10 @@
 }
 
 .fa-angle-double-up {
-  color: #FFFFFF;
+  color: $accent-color;
   z-index: inherit;
   position: absolute;
   visibility: visible;
-  padding-top: 0.45em;
-  padding-left: 0.66em;
+  padding-top: .45em;
+  padding-left: .66em;
 }
