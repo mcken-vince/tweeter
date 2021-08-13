@@ -1,6 +1,8 @@
 $title-font: 'Bungee', sans-serif;
 $nav-arrows-color: red;
 $accent-color: #FFFFFF;
+$nav-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+$nav-color: #4056A1;
 
 .navigation {
   height: 120px;
@@ -16,8 +18,8 @@ $accent-color: #FFFFFF;
   top: auto;
 
   &.background-on {
-    background-color: #4056A1;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+    background-color: $nav-color;
+    background-image: $nav-image;
   }
 
   span {
@@ -66,7 +68,6 @@ $accent-color: #FFFFFF;
     cursor: pointer;
   }
 }
-
 
 #toggle-top {
   z-index: +1;
