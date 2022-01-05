@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
-    "sass-watch": "sass sass:public/styles --watch --poll --no-source-map"
+    "sass-watch": "sass sass:public/styles --watch --poll --no-source-map",
+    "deploy": "gh-pages production"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "md5": "^2.3.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "nodemon": "^1.9.2"
   }
 }
