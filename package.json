@@ -2,13 +2,14 @@
   "name": "tweeter",
   "version": "1.0.0",
   "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
- 
+  "homepage": "http://mcken-vince.github.io/tweeter",
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
     "sass-watch": "sass sass:public/styles --watch --poll --no-source-map",
+    "sass-compile": "sass sass:public/styles",
     "predeploy": "sass sass:public/styles",
     "deploy": "gh-pages -d public"
   },
