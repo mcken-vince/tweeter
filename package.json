@@ -9,6 +9,7 @@
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
     "sass-watch": "sass sass:public/styles --watch --poll --no-source-map",
+    "predeploy": "sass sass:public/styles",
     "deploy": "gh-pages -d public"
   },
   "author": "Lighthouse Labs",
