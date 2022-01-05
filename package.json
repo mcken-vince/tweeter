@@ -9,7 +9,7 @@
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
     "sass-watch": "sass sass:public/styles --watch --poll --no-source-map",
-    "deploy": "gh-pages production"
+    "deploy": "gh-pages -d public"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
