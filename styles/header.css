@@ -1,0 +1,15 @@
+body > header {
+  padding-top: 80px;
+  height: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: #4784d4;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+}
+body > header img {
+  height: 150px;
+}

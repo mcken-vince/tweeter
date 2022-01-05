@@ -1,0 +1,68 @@
+/*
+Mobile devices
+*/
+@media screen and (max-device-width: 767px) {
+  nav.navigation {
+    height: 15rem;
+    background-color: #4056A1;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+    align-items: center;
+  }
+
+  body > header {
+    height: 700px;
+    margin-top: 20rem;
+    margin-bottom: 10%;
+    width: 700px;
+    align-self: center;
+  }
+  body > header img {
+    height: 400px;
+  }
+  body > header h2 {
+    font-size: 7rem;
+    padding-bottom: 0.5em;
+  }
+
+  .navigation > span, article.tweet, .new-tweet footer, #tweet-text, #error > h3, #submit-tweet, #toggle-top {
+    font-size: 4rem;
+  }
+
+  article.tweet > footer, .navigation > .toggle-compose {
+    font-size: 3rem;
+  }
+
+  article.tweet > footer > .icons > .fa-retweet {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/*
+Desktop or anything over 1024px
+*/
+@media only screen and (min-width: 1024px) {
+  main.container {
+    margin-top: 160px;
+    padding: 20px 60px;
+    max-width: 70%;
+  }
+
+  body {
+    flex-direction: row;
+    width: 100%;
+  }
+  body > header {
+    margin-top: 160px;
+    padding: 20px 60px;
+    max-width: 30%;
+    margin-left: 60px;
+    margin-top: 200px;
+    background-image: url("https://www.transparenttextures.com/patterns/dust.png");
+    background-color: #4784d4;
+  }
+
+  .navigation {
+    background-color: #4056A1;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+  }
+}
